@@ -5,7 +5,7 @@ Parse mixed content with `jq`
 
 ```
 Usage: mycommand | jqparse.sh [options]
-Purpose: Via stdin, parse JSON from mixed input (for instance, Ansible).
+Purpose: Via stdin, parse JSON from mixed input (for instance, Ansible verbose output).
 Tip: Set variable 'ANSIBLE_FORCE_COLOR=true' or 'force_color=True' in 'ansible.cfg' to re-enable colors.
 Options:
         -o, --output <dir>      Parse JSON into files instead of to stdout (implies -nc)
