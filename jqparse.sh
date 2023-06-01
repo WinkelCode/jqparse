@@ -22,7 +22,7 @@ while [ "$1" ]; do
 			;;
 		-h | --help | --usage)
 			printf '%s\n' "Usage: mycommand | jqparse.sh [options]"
-			printf '%s\n' "Purpose: Via stdin, parse JSON from mixed input (for instance, Ansible)."
+			printf '%s\n' "Purpose: Via stdin, parse JSON from mixed input (for instance, Ansible verbose output)."
 			printf '%s\n' "Tip: Set variable 'ANSIBLE_FORCE_COLOR=true' or 'force_color=True' in 'ansible.cfg' to re-enable colors."
 			printf '%s\n' "Options:"
 			printf '\t%s\t%s\n' "-o, --output <dir>" "Parse JSON into files instead of to stdout (implies -nc)" 
