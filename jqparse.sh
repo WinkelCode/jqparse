@@ -21,11 +21,13 @@ while [ "$1" ]; do
 			unset jq_colorize
 			;;
 		-h | --help | --usage)
-			printf '%s\n' "Usage: jqparse.sh [options]"
+			printf '%s\n' "Usage: mycommand | jqparse.sh [options]"
+			printf '%s\n' "Purpose: Via stdin, parse JSON from mixed input (for instance, Ansible)."
+			printf '%s\n' "Tip: Set variable 'ANSIBLE_FORCE_COLOR=true' or 'force_color=True' in 'ansible.cfg' to re-enable colors."
 			printf '%s\n' "Options:"
-			printf '\t%s\t%s\n' "-o, --output <dir>" "Parse JSON into directory (implies -nc)" 
+			printf '\t%s\t%s\n' "-o, --output <dir>" "Parse JSON into files instead of to stdout (implies -nc)" 
 			printf '\t%s\t\t%s\n' "-c, --convert" "Try to convert invalid JSON into valid JSON"
-			printf '\t%s\t%s\n' "-nc, --no-colors" "Disable colors"
+			printf '\t%s\t%s\n' "-nc, --no-colors" "Disable colors in jq output"
 			printf '\t%s\t%s\n' "-h, --help, --usage" "Show this help message"
 			exit 0
 			;;
